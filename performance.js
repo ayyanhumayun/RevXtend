@@ -81,15 +81,13 @@ const Performance = () => {
         </TouchableOpacity>
       )}
 
-      {loading && <ActivityIndicator size="large" color="#FF9500" style={styles.loadingIndicator} />}
-
       {aiResponse !== '' && (
         <View style={styles.responseContainer}>
           <Text style={styles.responseTitle}>Suggested Modifications:</Text>
           <Text style={styles.responseText}>{aiResponse}</Text>
         </View>
       )}
-
+  {loading && <ActivityIndicator size="large" color="#FF9500" style={styles.loadingIndicator} />}
       {aiResponse !== '' && (
         <TouchableOpacity style={styles.apiButton} onPress={handlePowerGainEstimation}>
           <Text style={styles.buttonText}>Power Gain Estimation</Text>
@@ -115,48 +113,47 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   detailsContainer: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FFFFFF15',
     padding: 20,
     borderRadius: 10,
+  
     width: '100%',
     marginBottom: 20,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
+   
   },
   detailText: {
-    fontSize: 16,
-    color: '#333',
+    fontSize: 17,
+    color: '#ffff',
     marginBottom: 6,
   },
   label: {
     fontWeight: 'bold',
-    color: '#007BFF',
+    color: '#FF6B00',
+  },
+  responseTitle:
+  {
+    fontWeight: 'bold',
+    fontSize: 18,
+    color: '#FF6B00',
+    marginBottom: 10,
   },
   apiButton: {
-    backgroundColor: '#FFFFFF15',
+    marginTop:20,
+    backgroundColor: '#FF6B00',
     paddingVertical: 14,
     paddingHorizontal: 20,
     borderRadius: 8,
     width: '100%',
     alignItems: 'center',
-    shadowColor: '#007BFF',
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
-    elevation: 3,
   },
   feedbackButton: {
-    backgroundColor: '#FFFFFF15',
+    backgroundColor: '#FF6B00',
+    marginTop: 35,
     paddingVertical: 14,
     paddingHorizontal: 20,
     borderRadius: 8,
     width: '100%',
     alignItems: 'center',
-    shadowColor: '#28A745',
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
-    elevation: 3,
   },
   buttonText: {
     color: '#FFFFFF',
@@ -164,20 +161,16 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   responseContainer: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FFFFFF15',
     padding: 15,
     borderRadius: 10,
     marginTop: 12,
-    width: '100%',
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
+    
   },
   responseText: {
-    color: '#333',
-    fontSize: 16,
-    lineHeight: 22,
+    color: '#ffff',
+    fontSize: 17,
+    lineHeight: 35,
   },
   loadingIndicator: {
     marginTop: 10,
