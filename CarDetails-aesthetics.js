@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity, KeyboardAvoidingVi
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export default function CarDetailForm() {
+export default function Aesthetics() {
   const navigation = useNavigation();
   const [isModified, setIsModified] = useState(false);
   const [formData, setFormData] = useState({
@@ -37,7 +37,7 @@ export default function CarDetailForm() {
       if (isModified) {
         navigation.navigate('CarSpecs');
       } else {
-        navigation.navigate('Performance',{carData: formData});
+        navigation.navigate('aesthetics',{carData: formData});
       }
     }
   };
@@ -49,7 +49,7 @@ export default function CarDetailForm() {
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       >
         {/* Title at the top */}
-        <Text style={styles.title}>Car Details</Text>
+        <Text style={styles.title}>Car Aesthetic Details</Text>
 
         <ScrollView
           style={styles.scrollContent}

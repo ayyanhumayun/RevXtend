@@ -28,7 +28,7 @@ const Menu = ({ navigation }) => {
             {/* Aesthetic Modifications Logo */}
             <TouchableOpacity
               style={styles.logoContainer}
-              onPress={() => navigation.navigate('CarDetails', { modificationType: 'Aesthetic' })}
+              onPress={() => navigation.navigate('Caraesthetics', { modificationType: 'Aesthetic' })}
             >
               <Image
                 source={require('./carlogo.png')} // Path to aesthetic logo

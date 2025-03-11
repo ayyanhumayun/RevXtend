@@ -7,9 +7,14 @@ import SignUpScreen from './SignUpScreen';
 import LandingScreen from './LandingScreen';
 import Menu from './Menu';
 import CarDetailForm from './CarDetails';
+import Caraesthetics from './CarDetails-aesthetics';
+
 import CarSpecs from './CarSpecs';
 import FeedbackPage from './FeedbackPage';
 import Modifications from './Modifications';
+import Performance from './performance';
+import Aesthetics from './aesthetics';
+
 import AdminDashboard from './AdminDashboard';
 
 const Stack = createNativeStackNavigator();
@@ -33,6 +38,10 @@ export default function App() {
         <Stack.Screen name="FeedbackPage" component={FeedbackPage} />
         <Stack.Screen name="Menu" component={Menu} />
         <Stack.Screen name="Modifications" component={Modifications} />
+        <Stack.Screen name="Performance" component={Performance} />
+        <Stack.Screen name="aesthetics" component={Aesthetics} />
+        <Stack.Screen name="Caraesthetics" component={Caraesthetics} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

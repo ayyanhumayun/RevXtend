@@ -34,7 +34,7 @@ export default function FeedbackPage() {
     setTimeout(() => {
       alert('Thank you for your feedback!');
       setIsSubmitting(false); // Re-enable button after submission
-      navigation.goBack(); // Navigate back after feedback is submitted
+      navigation.navigate(CarDetails); // Navigate back after feedback is submitted
     }, 2000);
   };
 
