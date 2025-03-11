@@ -58,7 +58,7 @@ const Performance = () => {
           <Text style={styles.responseText}>{powerGain}</Text>
         </View>
         <TouchableOpacity style={styles.feedbackButton} onPress={() => navigation.navigate('FeedbackPage')}>
-          <Text style={styles.buttonText}>Go to Feedback Page</Text>
+          <Text style={styles.buttonText}>Submit Feedback</Text>
         </TouchableOpacity>
       </ScrollView>
     );
